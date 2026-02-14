@@ -1,0 +1,58 @@
+{
+  "name": "axe-accessibility-checker",
+  "displayName": "Axe Accessibility Checker",
+  "description": "Run axe-core accessibility tests on URLs opened in VS Code's integrated browser",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Testing",
+    "Linters"
+  ],
+  "activationEvents": [
+    "onView:axeTestPanel"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "axe-accessibility",
+          "title": "Axe Accessibility",
+          "icon": "resources/axe-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "axe-accessibility": [
+        {
+          "id": "axeTestPanel",
+          "name": "A11y Test",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "axe-accessibility-checker.runTest",
+        "title": "Run Axe Accessibility Test"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@axe-core/puppeteer": "^4.8.0",
+    "puppeteer": "^24.37.3"
+  }
+}
