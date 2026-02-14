@@ -1,5 +1,10 @@
 # Axe Accessibility Checker for VS Code
 
+<img width="1655" height="1038" alt="Screenshot 2026-02-14 at 20 07 24" src="https://github.com/user-attachments/assets/4cb8f394-deeb-4c64-b8e1-12c32daa7ba1" />
+
+
+[![Demo Video]([https://www.youtube.com/watch?v=dQw4w9WgXcQ](https://www.youtube.com/watch?v=EGCAbgW5TVA))
+
 A VS Code extension that runs axe-core accessibility tests on URLs opened in VS Code's integrated browser (Simple Browser). Get detailed HTML reports of accessibility violations right in your editor.
 
 ## Features
