@@ -16,6 +16,10 @@ A VS Code extension that runs axe-core accessibility tests on URLs opened in VS 
 - 📝 Includes remediation guidance and help links
 - 💾 Saves reports to `axe-reports/` folder with timestamps
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Installation
 
 ### From Source
@@ -104,10 +108,6 @@ npx vsce package
 
 - **@axe-core/puppeteer** - Axe accessibility testing engine for Puppeteer
 - **puppeteer** - Headless Chrome browser automation
-
-## License
-
-MIT
 
 ## Credits
 
